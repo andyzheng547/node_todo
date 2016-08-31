@@ -6,6 +6,8 @@ $('#create-todo').submit( (e) => {
     url: '/todos',
     data: $(e.target).serialize()
   });
+
+  window.location.href = '/';
 });
 
 $('.toggle-update').click( (e) => {
